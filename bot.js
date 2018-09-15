@@ -23,7 +23,7 @@ bot.on('messageReactionAdd', react => {
     var ur = react.message.attachments.first().url;
     //console.log(id);
     var att = new Discord.Attachment(ur);
-    //console.log('aaa');
+    console.log('aaa');
     const channel = bot.channels.find(x => x.name === config.targetChannel);
     if(id === config.emoteID && ct >= config.emoteCount){
     	fs.readFile("att.json", 'utf8', function(err,data){
